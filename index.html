@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <title>Work4</title>
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin=""></script>
+</head>
+
+<body>
+  <header id="ihead">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Блюда</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Корзина</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О нас</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class=" grid text-center">
+      <div class="g-col-6">
+        <h1 class="display-1">NATIONAL FOOD</h1>
+      </div>
+      <div class="g-col-6"><a class="navbar-brand" href="#">
+          <img src="0ec03d25d8e2641d2b5e77e4f06fc411-no-bg-preview (carve.photos).png" alt="Bootstrap" width="30%"
+            height="30%">
+        </a></div>
+    </div>
+  </header>
+  <div class="navig list-group" id="inavig">
+    <h3>Навигация</h3>
+    <a href="#ihead" class="list-group-item list-group-item-action">шапка</a>
+    <a href="#inavig" class="list-group-item list-group-item-action active" aria-current="true">
+      навигация
+    </a>
+    <a href="#itable" class="list-group-item list-group-item-action">таблица</a>
+    <a href="#iform" class="list-group-item list-group-item-action">форма</a>
+    <a href="#ifooter" class="list-group-item list-group-item-action">футер</a>
+  </div>
+  <table class="table table-striped" id="itable">
+    <caption class="tname">
+      НАШИ СКИДКИ
+    </caption>
+    <thead class="thead">
+      <tr>
+        <th>Страна</th>
+        <th>Название</th>
+        <th>Состав</th>
+        <th>Цена</th>
+      </tr>
+    </thead>
+    <tbody class="tbody">
+      <tr class="tr body" class="nch">
+        <td>Грузия</td>
+        <td>Комбо по Грузински</td>
+        <td>Грузинский чай 300 мл, суп Харчо, Хачапури 1 шт, Хинкали 2 шт</td>
+        <td>2300 руб</td>
+      </tr>
+      <tr class="tr body" class="ch">
+        <td>Узбекистан</td>
+        <td>Комбо по Узбекски</td>
+        <td>Кумыс 300 мл,суп Шурпа, Самса 1 шт, конфеты Пашмак</td>
+        <td>2200 руб</td>
+      </tr>
+      <tr class="tr body" class="nch">
+        <td>Украина</td>
+        <td>Комбо по Украински</td>
+        <td>
+          Сбитень 300 мл,Борщ, пирожок лук-яйцо, пельмени с сметаной 5 шт
+        </td>
+        <td>2100 руб</td>
+      </tr>
+      <tr class="tr body" class="ch">
+        <td>Армения</td>
+        <td>Комбо по Армянски</td>
+        <td>
+          Армянский кофе 100 мл,суп Хаш, долма в виноградных листьях 3 шт,
+          Пахлава
+        </td>
+        <td>2500 руб</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr class="text-center" class="tr body" class="ch">
+        <td colspan="4">АКЦИЯ студентам до 15%!</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <form class="row g-3 needs-validation" novalidate id="iform">
+    <p>
+    <h2>Хотите работать у нас?</h2>
+    </p>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">ФИО</label>
+      <input type="text" class="form-control" id="validationCustom01" value="Иванов Иван Иванович" required />
+      <div class="valid-feedback">Заполните ФИО</div>
+    </div>
+
+    <p>
+    <div class="col-md-4">
+      <label for="tel" class="form-label">Номер Телефона:</label>
+      <input id="tel" type="text" class="form-control" type="tel" />
+    </div>
+    </p>
+    <div class="col-md-4">
+      <label for="data" class="form-label">Дата Рождения:</label>
+      <input id="data" class="form-control" type="date" />
+
+    </div>
+    <p>
+    <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label">e-mail</label>
+      <div class="input-group">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+          required />
+        <div class="invalid-feedback">Please choose a username.</div>
+      </div>
+    </div>
+    </p>
+
+    <div class="col-md-4">
+      <input type="radio" id="mail" name="гендер" />
+      <label id="mail">м</label>
+      <input type="radio" id="femail" name="гендер" />
+      <label id="femail">ж</label>
+    </div>
+    <p>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">Ваш опыт работы</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option value="absence">нет</option>
+        <option value="absence">0-1</option>
+        <option value="absence">3-10</option>
+        <option value="absence">10+</option>
+      </select>
+      <div class="invalid-feedback">Please select a valid state.</div>
+    </div>
+    </p>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">место последней работы</label>
+      <input type="text" class="form-control" id="validationCustom03" required />
+      <div class="invalid-feedback">Please provide a valid city.</div>
+    </div>
+    <p>
+    <div class="col-md-3">
+      <label for="validationCustom05" class="form-label">Расскажите о себе</label>
+      <input type="text" class="form-control" id="validationCustom05" required />
+      <div class="invalid-feedback">Please provide a valid zip.</div>
+    </div>
+    </p>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+        <label class="form-check-label" for="invalidCheck">
+          Согласен с условиями обработки и передачи данных
+        </label>
+        <div class="invalid-feedback">You must agree before submitting.</div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Сохранить</button>
+    </div>
+  </form>
+
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top" id="ifooter">
+    <div class="col mb-3"></div>
+    <div class="col mb-3">
+      <h5><ya-tr-span data-index="7-0" data-translated="true" data-source-lang="en" data-target-lang="ru"
+          data-value="Section" data-translation="Раздел" data-ch="0" data-type="trSpan"
+          style="visibility: inherit !important;">наши контакты</ya-tr-span></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Email:NFOOD@mail.ru</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tel:+79187770077</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Address:г.Краснодар, ул Кубанская
+            68</a></li>
+
+      </ul>
+    </div>
+    <div class="col mb-3">
+      <h5><ya-tr-span data-index="8-0" data-translated="true" data-source-lang="en" data-target-lang="ru"
+          data-value="Section" data-translation="Раздел" data-ch="1" data-type="trSpan"
+          style="visibility: inherit !important;">Разделы</ya-tr-span></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Главная</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Блюда</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Корзина</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">О нас</a></li>
+      </ul>
+    </div>
+    <div class="col mb-3">
+      <h5><ya-tr-span data-index="9-0" data-translated="true" data-source-lang="en" data-target-lang="ru"
+          data-value="Section" data-translation="Раздел" data-ch="1" data-type="trSpan"
+          style="visibility: inherit !important;">соц-сети</ya-tr-span></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a class="text-center" href="#inst"><i class="fab fa-instagram"></i></a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" href="#telega"><i
+              class="fab fa-telegram"></i></a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" href="#vk"><i
+              class="fab fa-vk"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
